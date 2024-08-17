@@ -1,7 +1,6 @@
 package com.app.kafka.controller;
 
-import com.app.kafka.Producer;
-import org.apache.kafka.clients.producer.KafkaProducer;
+import com.app.kafka.Producers.Producer;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
