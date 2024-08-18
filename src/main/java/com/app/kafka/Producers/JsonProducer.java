@@ -23,7 +23,7 @@ public class JsonProducer {
                 .withPayload(user)
                 .setHeader(KafkaHeaders.TOPIC, topic)
                 .build();
-        LOGGER.info(String.format("Producing message -> %s on Topic -> %s", message.toString(), topic));
+        LOGGER.info(String.format("Producing message -> %s on Topic -> %s", user, topic));
         kafkaTemplate.send(message);
     }
 }
